@@ -1,6 +1,6 @@
-OUTPUT_PDF_PATH=./resource/output/invoice.pdf
+OUTPUT_PDF_PATH=resource/output/invoice.pdf
 PAYDAY=23
 CAL_ID=en.german#holiday@group.v.calendar.google.com
-MAX_HOURS=450
-ALL_H=100
+MAX_LOAN=450
+HOURLY_RATE=10
 OVERTIME_PREV_MONTH=42
