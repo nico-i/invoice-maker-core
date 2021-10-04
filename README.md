@@ -1,8 +1,8 @@
 # Invoice-Maker Core
 
-The Invoice Maker is program dedicated to extracting work-time through
+The Invoice Maker is a program dedicated to extracting work-time through
 the Google Calendar API and export a dynamically filled .pdf-invoice with
-the help of Beautiful Soup 4 and WeasyPrint.
+the help of Beautiful Soup 4 and WeasyPrint. [Example](./src/resource/output/invoice.pdf)
 
 ## First Steps
 
@@ -28,7 +28,7 @@ The last piece of the puzzle is the [Google Calendar API](https://developers.goo
 
 ## Running the Invoice-Maker
 
-After setting up, you are almost ready to start your first test print. There is just one more thing that needs configuring, namely the **CAL_ID field** in the [config.txt](./resource/mock/config.txt). Because unless you are subscribed to the [Holidays in Germany](https://calendar.google.com/calendar/embed?src=en.german%23holiday%40group.v.calendar.google.com&ctz=Europe%2FBerlin) calendar, the mock-data will throw an exception. You need to change this value to a calendar-id that is connected to your google account. You can achieve this by either running the [python-script](./src/all_calendars.py) with:
+After setting up, you are almost ready to start your first test print. There is just one more thing that needs configuring, namely the **CAL_ID field** in the [config.txt](./src/resource/mock/config.txt). Because unless you are subscribed to the [Holidays in Germany](https://calendar.google.com/calendar/embed?src=en.german%23holiday%40group.v.calendar.google.com&ctz=Europe%2FBerlin) calendar, the mock-data will throw an exception. You need to change this value to a calendar-id that is connected to your google account. You can achieve this by either running the [python-script](./src/all_calendars.py) with:
 
 ```shell
 /usr/local/bin/python3 ./src/all_calendars.py
