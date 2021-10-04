@@ -19,7 +19,7 @@ print('1. Creating HTML Template.')
 
 # Base path to this dir
 base_path = os.path.dirname(os.path.abspath(
-    __file__).replace('src/', '').replace('src\\', ''))
+    __file__))
 # generate default absolute paths from relative ones and base_path
 invoice_html_file_path = os.path.join(base_path, 'resource/invoice.html')
 css_file_path = os.path.join(base_path, 'resource/css/style.css')
@@ -160,7 +160,7 @@ print('6. Parsing HTML to PDF.')
 if(not config_dic.get('OUTPUT_PDF_PATH', '') == ''):
     output_file_path = config_dic.get('OUTPUT_PDF_PATH', '')
 HTML(tmp_html_path).write_pdf(
-    output_file_path, stylesheets=[CSS(css_file_path)])
+    os.path.join(base_path,output_file_path), stylesheets=[CSS(css_file_path)])
 
 os.remove(tmp_html_path)
 
