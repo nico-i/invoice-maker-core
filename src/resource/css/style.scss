@@ -1,0 +1,120 @@
+$primary-color: #cccccc;
+$secondary-color: #e6e6e6;
+
+@page {
+  size: Letter;
+  margin: 0;
+}
+
+html {
+  background-color: white;
+  font-family: "Arial", sans-serif;
+}
+body {
+  width: 21cm;
+  height: 29.7cm;
+  margin: 1.3cm 0.3cm 0 0.3cm;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+}
+
+#header {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 1em;
+  background-color: $primary-color;
+  padding: 0.5em;
+  margin: 0 0 2em 0;
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  h4 {
+    margin: 0;
+  }
+}
+
+#infos {
+  width: 100%;
+  div {
+    display: inline-flex;
+    text-align: left;
+    background-color: white;
+    margin: 0.5em 0.5em;
+  }
+  margin: 0 0 1.5em 0;
+}
+
+#timetable {
+    margin: 0 0 1.5em 0;
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table,
+  th {
+    text-align: center;
+    border: 1px solid black;
+    background-color: $secondary-color;
+    padding: 0.3em;
+  }
+  td {
+    text-align: left;
+    border: 1px solid black;
+    background-color: white;
+    padding: 0.3em;
+  }
+  #date {
+    width: 10%;
+  }
+  #duration {
+    width: 20%;
+  }
+  #occupation {
+    width: 50%;
+  }
+  #hours {
+    width: 10%;
+  }
+}
+
+#calc {
+    margin: 0 0 1.5rem 0;
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: bold;
+  }
+  td {
+    text-align: left;
+    background-color: white;
+    padding: 0.5em 0 0.5em 0;
+  }
+}
+
+#signatures {
+    width: 50%;
+    padding-right: 2rem;
+    h5{
+        font-weight: bold;
+        margin: 0;
+    }
+    hr{
+        margin: 0;
+    }
+}
+
+#notice {
+    width: 50%;
+    border: 1px solid black;
+    p{
+        margin-top: 0;
+        font-size: small;
+    }
+}

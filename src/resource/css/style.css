@@ -1,0 +1,138 @@
+@page {
+  size: Letter;
+  margin: 0;
+}
+
+html {
+  background-color: white;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  width: 21cm;
+  height: 29.7cm;
+  margin: 1.3cm 0.3cm 0 0.3cm;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 1em;
+  background-color: #cccccc;
+  padding: 0.5em;
+  margin: 0 0 2em 0;
+}
+
+#header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#header h4 {
+  margin: 0;
+}
+
+#infos {
+  width: 100%;
+  margin: 0 0 1.5em 0;
+}
+
+#infos div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: left;
+  background-color: white;
+  margin: 0.5em 0.5em;
+}
+
+#timetable {
+  margin: 0 0 1.5em 0;
+}
+
+#timetable table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#timetable table,
+#timetable th {
+  text-align: center;
+  border: 1px solid black;
+  background-color: #e6e6e6;
+  padding: 0.3em;
+}
+
+#timetable td {
+  text-align: left;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.3em;
+}
+
+#timetable #date {
+  width: 10%;
+}
+
+#timetable #duration {
+  width: 20%;
+}
+
+#timetable #occupation {
+  width: 50%;
+}
+
+#timetable #hours {
+  width: 10%;
+}
+
+#calc {
+  margin: 0 0 1.5rem 0;
+}
+
+#calc table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: bold;
+}
+
+#calc td {
+  text-align: left;
+  background-color: white;
+  padding: 0.5em 0 0.5em 0;
+}
+
+#signatures {
+  width: 50%;
+  padding-right: 2rem;
+}
+
+#signatures h5 {
+  font-weight: bold;
+  margin: 0;
+}
+
+#signatures hr {
+  margin: 0;
+}
+
+#notice {
+  width: 50%;
+  border: 1px solid black;
+}
+
+#notice p {
+  margin-top: 0;
+  font-size: small;
+}
+/*# sourceMappingURL=style.css.map */
