@@ -93,6 +93,10 @@ for key in static_dic.keys():
 # initialise values to be calculated later
 events = get_events(service, config_dic.get(
     'CAL_ID', ''), start_date, end_date)
+
+if len(events) > 0:
+    print('3. ' + str(len(events)) + ' events were found.')
+
 max_hours = 0
 if(config_dic.get('MAX_LOAN', 0) == ""):
     max_hours = 0

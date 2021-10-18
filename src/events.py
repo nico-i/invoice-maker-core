@@ -15,7 +15,6 @@ def get_events(service, cal_id, start_date, end_date):
     if not all_events:
         print('3. No events found.')
     else:
-        print('3. '+str(len(events)) + ' events were found.')
         for event in all_events:
             tpformat = '%Y-%m-%dT%H:%M:%S%z'
             start = event['start'].get('dateTime', event['start'].get('date'))
