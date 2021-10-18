@@ -59,7 +59,7 @@ config_dic.update({'HOURLY_RATE': '{0:.2f}'.format(float(hour_rate)) + ' €'})
 if(config_dic.get('PAYDAY', '') != ''):
     end_date = date.today().replace(day=int(config_dic.get('PAYDAY')))
     start_date = end_date - \
-        timedelta(days=(date.today().replace(day=1) - timedelta(days=1)).day)
+        timedelta(days=(date.today().replace(day=1) - timedelta(days=2)).day)
 
 # initalize messages_dic
 messages_dic = {}
