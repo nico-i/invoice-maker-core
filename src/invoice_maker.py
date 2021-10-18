@@ -130,7 +130,7 @@ if(overtime_rest <= 0):
 elif(overtime_rest > 0):
     payable_hours_this_month = total_hours_this_month-overtime_rest
     config_dic.update({'H_TO_PAY': '{0:.2f}'.format(payable_hours_this_month)})
-    config_dic.update({'OVERTIME_REST': '{0:.2f}'.format(overtime_rest)})
+    config_dic.update({'OVERTIME_REST': '{0:.2f}'.format(round(overtime_rest*4)/4)})
 
 # if script was called with 'py invoice_maker.py 1' add total_hours to ALL_HOURS
 config_dic.update({'ALL_H': '{0:.2f}'.format(total_hours_this_month)})
